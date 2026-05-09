@@ -462,7 +462,7 @@ footer{
         <li>Alertes Telegram instantanées</li>
         <li>Plan mécanique SL/TP inclus</li>
         <li class="no">S1 Pré-Londres · S4 Pré-US</li>
-        <li class="no">Accès AIO+</li>
+        <li class="no">Add-on AIO+ disponible en option</li>
       </ul>
       <a href="#subscribe" class="plan-btn">Essayer gratuitement</a>
       <div style="font-size:10px;color:var(--td);font-family:'DM Mono',monospace;margin-top:10px;text-align:center">Ensuite → plans ci-dessous</div>
@@ -481,7 +481,8 @@ footer{
         <li>S3 US (15h30–17h00)</li>
         <li>Plan mécanique SL/TP inclus</li>
         <li>Journal de trading auto</li>
-        <li class="no">S4 Pré-US · Accès AIO+</li>
+        <li class="no">S4 Pré-US</li>
+        <li class="no">Add-on AIO+ disponible en option</li>
       </ul>
       <a href="#subscribe" class="plan-btn primary">Commencer</a>
     </div>
@@ -498,12 +499,58 @@ footer{
         <li>Plan mécanique SL/TP inclus</li>
         <li>Journal + stats avancées</li>
         <li>Signaux ELITE en priorité</li>
-        <li>Accès AIO+ prioritaire</li>
+        <li>Add-on AIO+ disponible (tarif réduit)</li>
         <li>Support direct Telegram</li>
       </ul>
       <a href="#subscribe" class="plan-btn">Choisir Premium</a>
     </div>
   </div>
+</section>
+
+<!-- ADD-ON AIO+ -->
+<section class="fade-up" style="max-width:960px;margin:48px auto 0;padding:0 16px">
+  <div class="section-label">Add-on</div>
+  <h2 class="section-title">AIO+ — Signaux 24h/24.</h2>
+  <p class="section-sub">En complément de ton abonnement. UTBot key=2 tourne non-stop — chaque flip = une alerte directe sur Telegram, sans filtre de session.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:600px;margin:32px auto 0">
+
+    <!-- Standard addon -->
+    <div class="price-card" style="text-align:center">
+      <div style="font-size:11px;font-family:'DM Mono',monospace;color:var(--td);letter-spacing:2px;margin-bottom:8px">POUR ABONNÉS STANDARD</div>
+      <div class="plan-name" style="font-size:22px">⚡ AIO+</div>
+      <div class="plan-price" style="font-size:42px">49€</div>
+      <div class="plan-price-sub">par 10 jours de trading</div>
+      <div class="plan-original">Lancement · prix limité</div>
+      <ul class="plan-feats" style="text-align:left;margin-top:16px">
+        <li>Signaux UTBot 24h/24</li>
+        <li>Hors sessions + pendant sessions</li>
+        <li>Tag [AIO+] pour distinguer</li>
+        <li>Activation via /addon sur Telegram</li>
+      </ul>
+      <a href="#subscribe" class="plan-btn" style="margin-top:8px">Ajouter à Standard</a>
+    </div>
+
+    <!-- Premium addon -->
+    <div class="price-card featured" style="text-align:center">
+      <div style="font-size:11px;font-family:'DM Mono',monospace;color:var(--td);letter-spacing:2px;margin-bottom:8px">POUR ABONNÉS PREMIUM</div>
+      <div class="plan-name" style="font-size:22px">⚡ AIO+</div>
+      <div class="plan-price" style="font-size:42px">39€</div>
+      <div class="plan-price-sub">par 10 jours de trading</div>
+      <div class="plan-original">Tarif réduit · abonnés Premium</div>
+      <ul class="plan-feats" style="text-align:left;margin-top:16px">
+        <li>Tout ce qu'inclut Standard AIO+</li>
+        <li>Prioritaire sur les signaux ELITE</li>
+        <li>Support direct Telegram inclus</li>
+        <li>Activation via /addon sur Telegram</li>
+      </ul>
+      <a href="#subscribe" class="plan-btn primary" style="margin-top:8px">Ajouter à Premium</a>
+    </div>
+
+  </div>
+  <p style="text-align:center;font-size:11px;color:var(--td);font-family:'DM Mono',monospace;margin-top:16px">
+    → Clé envoyée par Alex après paiement · activation instantanée via /addon dans le bot
+  </p>
 </section>
 
 <!-- FORM -->
@@ -531,6 +578,8 @@ footer{
             <option value="starter">⚡ Starter — Gratuit (5 jours de trading)</option>
             <option value="standard" selected>🥇 Standard — 59€ (10 jours de trading)</option>
             <option value="premium">💎 Premium — 99€ (10 jours de trading)</option>
+            <option value="addon_aio_standard">⚡ Add-on AIO+ Standard — 49€</option>
+            <option value="addon_aio_premium">⚡ Add-on AIO+ Premium — 39€</option>
           </select>
         </div>
         <button class="form-btn" id="form-btn" onclick="submitForm()">ENVOYER MA DEMANDE →</button>
